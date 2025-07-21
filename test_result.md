@@ -101,3 +101,122 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Autopostulador laboral para Chile - Sistema completo de automatización para búsqueda y postulación laboral en LinkedIn, Laborum, BNE y Trabajando.com. Incluye IA para personalización de CVs y respuestas automáticas a formularios. Usuario: Diego Contreras, Ejecutivo Comercial con 12+ años experiencia en venta consultiva y especialista SAP."
+
+backend:
+  - task: "Modelos de datos y estructura base"
+    implemented: false
+    working: "NA"
+    file: "backend/server.py, backend/models/"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Iniciando desarrollo de modelos para usuario, trabajos, postulaciones, portales"
+
+  - task: "Web scraping para portales laborales"
+    implemented: false
+    working: "NA"
+    file: "backend/scrapers/"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Desarrollo de scrapers para LinkedIn, Laborum, BNE, Trabajando.com"
+
+  - task: "API endpoints para gestión"
+    implemented: false
+    working: "NA"
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "APIs para gestión de perfil, búsquedas, postulaciones"
+
+  - task: "Sistema de colas para postulaciones"
+    implemented: false
+    working: "NA"
+    file: "backend/job_queue.py"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Sistema asíncrono para postulaciones automáticas"
+
+  - task: "Integración Gemini AI"
+    implemented: false
+    working: "NA"
+    file: "backend/ai_service.py"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Pendiente API key de usuario, estructura preparada"
+
+frontend:
+  - task: "Dashboard principal"
+    implemented: false
+    working: "NA"
+    file: "frontend/src/components/Dashboard.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Dashboard con estadísticas y gestión de postulaciones"
+
+  - task: "Gestión de perfil"
+    implemented: false
+    working: "NA"
+    file: "frontend/src/components/Profile.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Perfil con CV, datos personales y configuraciones"
+
+  - task: "Visualización de trabajos"
+    implemented: false
+    working: "NA"
+    file: "frontend/src/components/Jobs.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Lista de trabajos encontrados y postulaciones"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 0
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Modelos de datos y estructura base"
+    - "API endpoints para gestión"
+    - "Dashboard principal"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Iniciando desarrollo completo del autopostulador laboral chileno. Comenzando con backend - modelos de datos y estructura base."
