@@ -1,6 +1,6 @@
 import asyncio
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Dict, Optional
 from motor.motor_asyncio import AsyncIOMotorDatabase
 from models import JobApplication, ApplicationStatus, CVData, JobPosting
